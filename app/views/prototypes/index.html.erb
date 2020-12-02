@@ -1,0 +1,5 @@
+<% if user_signed_in? %>
+  <%= link_to "こんにちは#{current_user.name}さん", user_path(current_user) %>
+<% end %>
+
+<%= render partial: 'prototype', collection: @prototype %>
