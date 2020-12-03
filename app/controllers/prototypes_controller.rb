@@ -1,6 +1,6 @@
 class PrototypesController < ApplicationController
   # ログインしていないユーザーをログインページへ
-  before_action :authenticate_user!, only: %i[create edit update destroy]
+  before_action :authenticate_user!, only: %i[new create edit update destroy]
 
   def index
     @prototype = Prototype.all
